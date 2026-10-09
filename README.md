@@ -2,7 +2,7 @@
 
 Painel de indicadores em 3 páginas sobre ~100 mil pedidos do e-commerce brasileiro **Olist** (2016–2018), construído em Power BI com ETL no Power Query, modelagem relacional e medidas em DAX.
 
-O foco do projeto é responder perguntas de negócio, não só mostrar números:
+O foco do projeto é para fins de aprendizado e responder perguntas de negócio:
 
 1. **Vendas:** como a receita evolui e o que mais vende?
 2. **Logística:** as entregas estão cumprindo o prazo prometido?
@@ -13,13 +13,13 @@ O foco do projeto é responder perguntas de negócio, não só mostrar números:
 ## Prévia
 
 ### Vendas
-![Dashboard de Vendas](docs/dashboard-vendas.png)
+![Dashboard de Vendas](./docs/dashboard-vendas.PNG)
 
 ### Logística
-![Dashboard de Logística](docs/dashboard-logistica.png)
+![Dashboard de Logística](./docs/dashboard-logistica.PNG)
 
 ### Cliente (Satisfação)
-![Dashboard de Cliente](docs/dashboard-cliente.png)
+![Dashboard de Cliente](./docs/dashboard-cliente.PNG)
 
 ---
 
@@ -38,7 +38,7 @@ O foco do projeto é responder perguntas de negócio, não só mostrar números:
 
 Modelo relacional com a tabela de **pedidos** e a de **itens do pedido** no centro, ligadas a clientes, vendedores, produtos, avaliações, pagamentos e a uma **tabela calendário** (criada em DAX e marcada como tabela de datas).
 
-![Modelo de dados](docs/modelo-de-dados.png)
+![Modelo de dados](docs/modelo-de-dados.PNG)
 
 Decisões de modelagem:
 
@@ -99,7 +99,6 @@ DIVIDE([Receita] - [Receita Mês Anterior], [Receita Mês Anterior])
 ## Próximos passos
 
 - [ ] Segmentações (ano, estado, categoria) sincronizadas entre as páginas e navegação entre páginas.
-- [ ] Corrigir/ajustar o gráfico de crescimento mensal e a ordenação cronológica dos gráficos temporais.
 - [ ] Filtrar categorias e estados com pouco volume nos rankings.
 - [ ] **Modelo de machine learning (scikit-learn)** para prever atraso na entrega, com integração das previsões ao dashboard.
 
@@ -137,8 +136,3 @@ Power BI · Power Query (M) · DAX
 ## Dados
 
 Dataset público da Olist, disponível no Kaggle sob licença CC BY-NC-SA 4.0. Os dados originais **não** estão incluídos neste repositório.
-
-## Autor
-
-**Lucas da Costa Paula**
-[LinkedIn](https://linkedin.com/in/lucascostapaula/) · [GitHub](https://github.com/Jialke)
